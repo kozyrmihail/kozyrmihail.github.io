@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rofl</title>
+</head>
+<body>
+<style>
+		
+	.btn {
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.button {
+		height: 90px;
+		width: 170px;
+		border: 2px solid #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 9px;
+	}	
+
+	p {
+		font-size: 24px;
+		pointer-events: none;
+	}
+
+	.imgoff {
+		display: none;
+	}
+
+	.imgone {
+		display: block;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	
+	.imgone img {
+    border-radius: 10px;
+	}
+
+</style>
+
+
+	<div class="btn" id="btn">
+
+		<div class="button" onclick="btnfun()" oncontextmenu="pashal()">
+			<p>Click</p>
+		</div>
+
+	</div>
+  <div class="imgoff" id="img">
+  	<img src="button/img/ban.jpg" alt="sha">
+  </div>
+
+
+<script>
+	function btnfun() {
+		
+		document.getElementById("btn").style.display = "none";
+    document.getElementById("img").classList.add("imgone");
+    document.getElementById("img").classList.remove("imgoff");
+
+	}; 
+
+	function pashal() {
+		alert("ЛКМ дегенерат");
+	};
+</script>
+</body>
+</html>
